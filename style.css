@@ -1,18 +1,19 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
-    color: white;
-    padding: 0 2px;
+    box-sizing: border-box;
+    padding: 0px 2px;
     /* outline: 1px solid blue; */
 }
 
 html {
-    padding-top: 120px;
+    padding-top: 100px;
+    scroll-behavior: smooth;
 }
 
 body {
     background-image: url("img/vscode_background.jpeg");
     background-position: center;
-    background-repeat: repeat;
+    background-repeat: no-repeat;
     background-size: cover;
     /* backdrop-filter: blur(3px);
     padding-top: 120px; */
@@ -20,6 +21,13 @@ body {
 
 h1 {
     text-decoration: underline;
+}
+
+h1,
+h2,
+p,
+i {
+    color: #ffffff;
 }
 
 /* NAVBAR */
@@ -67,14 +75,15 @@ header {
 @media (max-width: 600px) {
     header {
         flex-direction: column;
-        justify-content: center; 
+        justify-content: center;
         padding: 10px 0;
+        height: 12vh;
     }
 
     .logo {
         width: 60px;
         height: auto;
-        margin-top: 30px;
+        margin-top: 35px;
         margin-left: 0px;
         margin-right: 0px;
     }
@@ -130,14 +139,12 @@ header {
 }
 
 .appIcon {
-    width: 15px;
-    height: 15px;
+    width: 16px;
+    height: 16px;
     background-color: white;
     padding: 1px;
+    margin: 1px;
 }
-
-
-
 
 @media (max-width: 600px) {
     #appLinks li a {
@@ -145,3 +152,58 @@ header {
     }
 }
 
+/* CONTACT */
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+}
+
+input[type=submit] {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+.container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+.column {
+    float: left;
+    width: 50%;
+    margin-top: 6px;
+    padding: 20px;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+
+@media screen and (max-width: 600px) {
+    .column, input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .container {
+        font-size: 14px;
+    }
+}
