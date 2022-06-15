@@ -1,22 +1,20 @@
 * {
     font-family: Arial, Helvetica, sans-serif;
     box-sizing: border-box;
-    padding: 0px 2px;
-    /* outline: 1px solid blue; */
-}
-
-html {
-    padding-top: 100px;
     scroll-behavior: smooth;
+    scroll-padding-top: 120px;
+    padding: 0px;
+    /* outline: 1px solid blue; */
 }
 
 body {
     background-image: url("img/vscode_background.jpeg");
-    background-position: center;
-    background-repeat: no-repeat;
+    background-position: left;
     background-size: cover;
-    /* backdrop-filter: blur(3px);
-    padding-top: 120px; */
+    background-repeat: no-repeat;
+    padding-top: 100px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 h1 {
@@ -76,25 +74,23 @@ header {
     header {
         flex-direction: column;
         justify-content: center;
-        padding: 10px 0;
-        height: 12vh;
     }
 
     .logo {
-        width: 60px;
-        height: auto;
-        margin-top: 35px;
+        width: 50px;
+        margin-top: 5px;
         margin-left: 0px;
         margin-right: 0px;
     }
 
-    #navbar {
-        padding-bottom: 30px;
-    }
-
     #navbar li a {
-        font-size: 14px;
-    }
+        font-size: 12px;
+    } 
+}
+
+.title {
+    display: flex;
+    justify-content: center;
 }
 
 /* ABOUT US */
@@ -118,7 +114,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 35vh;
+    height: 55vh;
 }
 
 #appLinks li {
@@ -143,7 +139,7 @@ header {
     height: 16px;
     background-color: white;
     padding: 1px;
-    margin: 1px;
+    margin: 0px;
 }
 
 @media (max-width: 600px) {
@@ -196,14 +192,32 @@ input[type=submit]:hover {
     clear: both;
 }
 
+@media (max-width: 600px) {
 
-@media screen and (max-width: 600px) {
-    .column, input[type=submit] {
+    .column,
+    input[type=submit] {
         width: 100%;
         margin-top: 0;
     }
 
     .container {
+        font-size: 14px;
+    }
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50%;
+    padding: 5px;
+    margin-top: 30px;
+    background-color: #ffffff;;
+    color: black;
+}
+
+@media (max-width: 600px) {
+    footer {
         font-size: 14px;
     }
 }
