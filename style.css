@@ -91,9 +91,29 @@ header {
 .title {
     display: flex;
     justify-content: center;
+    text-decoration: none;
 }
 
-/* ABOUT US */
+.typewrite {
+    color: white;
+    font-size: 4rem;
+    text-decoration: none;
+    margin: 5px;
+}
+
+@media (max-width: 600px) {
+    .typewrite {
+        font-size: 2rem;
+    }
+}
+
+/* ABOUT */
+#about {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
 .paragraph {
     display: flex;
     justify-content: center;
@@ -111,6 +131,12 @@ header {
 }
 
 /* COMPANY LINKS */
+#apprenticeships {
+    display: flex;
+    flex-direction: column;
+    margin: 50px;
+}
+
 #appLinks {
     display: flex;
     justify-content: space-between;
@@ -142,6 +168,7 @@ header {
     background-color: #ffffff;
     padding: 1px;
     margin: 0px;
+    border-radius: 4px;
 }
 
 @media (max-width: 600px) {
