@@ -103,7 +103,7 @@ header {
 
 @media (max-width: 600px) {
     .typewrite {
-        font-size: 2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -111,7 +111,7 @@ header {
 #about {
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 50px 0px;
 }
 
 .paragraph {
@@ -134,7 +134,7 @@ header {
 #apprenticeships {
     display: flex;
     flex-direction: column;
-    margin: 50px;
+    margin: 50px 0px;
 }
 
 #appLinks {
