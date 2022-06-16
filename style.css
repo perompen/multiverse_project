@@ -141,7 +141,7 @@ header {
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    height: 55vh;
+    height: 60vh;
 }
 
 #appLinks li {
