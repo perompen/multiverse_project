@@ -38,7 +38,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #ffffff;
+    background-color: #FAF9F6;
 }
 
 .logo {
@@ -106,6 +106,7 @@ header {
 @media (max-width: 600px) {
     .paragraph {
         font-size: 14px;
+        width: 75%;
     }
 }
 
@@ -119,6 +120,7 @@ header {
 
 #appLinks li {
     list-style-type: none;
+    width: 100%;
 }
 
 #appLinks li a {
@@ -137,7 +139,7 @@ header {
 .appIcon {
     width: 16px;
     height: 16px;
-    background-color: white;
+    background-color: #ffffff;
     padding: 1px;
     margin: 0px;
 }
@@ -154,7 +156,7 @@ select,
 textarea {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid #cccccc;
     margin-top: 6px;
     margin-bottom: 16px;
     resize: vertical;
@@ -162,7 +164,7 @@ textarea {
 
 input[type=submit] {
     background-color: #04AA6D;
-    color: white;
+    color: #ffffff;
     padding: 12px 20px;
     border: none;
     cursor: pointer;
@@ -174,7 +176,7 @@ input[type=submit]:hover {
 
 .container {
     border-radius: 5px;
-    background-color: #f2f2f2;
+    background-color: #FAF9F6;
     padding: 10px;
     margin-top: 20px;
 }
@@ -205,6 +207,7 @@ input[type=submit]:hover {
     }
 }
 
+/* FOOTER */
 footer {
     display: flex;
     justify-content: center;
@@ -212,7 +215,7 @@ footer {
     height: 50%;
     padding: 5px;
     margin-top: 30px;
-    background-color: #ffffff;;
+    background-color: #FAF9F6;
     color: black;
 }
 
