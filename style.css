@@ -88,22 +88,18 @@ header {
     } 
 }
 
+/* TITLE */
 .title {
     display: flex;
     justify-content: center;
     text-decoration: none;
-}
-
-.typewrite {
-    color: white;
     font-size: 4rem;
-    text-decoration: none;
     margin: 5px;
 }
 
 @media (max-width: 600px) {
-    .typewrite {
-        font-size: 1.5rem;
+    .title {
+        font-size: 2rem;
     }
 }
 
